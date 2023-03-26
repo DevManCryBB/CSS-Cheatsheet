@@ -1,0 +1,43 @@
+:root {
+    --big-text:#E866EC;
+    --gradient: #71477A #A353A9;
+    --outline: #E0EAE5;
+    --glow-color: #b558bb;
+    --bg-color: #31363B;
+}
+
+header, footer {
+    height: 15vh
+}
+
+main {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.card{ 
+    border:2px dashed var(--outline);
+    width: 30%;
+}
+
+.card > h3 {
+    border: 1px solid black
+    border radius 5px;
+    position: relative
+    bottom 30px
+    background-color var(--gradient)
+}
+
+
+
+@media screen and (max-width768px) {
+    .card {
+         width: 90%
+    }
+}
